@@ -2,8 +2,6 @@
 .idea/
 .git/
 
-node_modules/
-
 archive/
 ref/
 info/

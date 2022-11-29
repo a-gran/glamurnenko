@@ -1,87 +1,204 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  --color-content: #ffffff;
-  --color-font: #000000;
-  --color-accent: #ff0c3a;
+	--color-content: #ffffff;
+	--color-font: #000000;
+	--color-accent: #ff0c3a;
+	--font-head: ;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: local("Roboto-Regular") format("ttf");
+	font-weight: 400;
+	font-style: normal;
 }
 
 html {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  font-family: "Old Standard TT", serif;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 
 body {
-  border: none;
-  outline: none;
-  background-color: var(--color-font);
+	border: none;
+	outline: none;
+	background-color: var(--color-font);
 }
 
 .container {
-  max-width: 1100px;
-  padding: 0 10px;
-  margin: 0 auto;
+	max-width: 1100px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
+
 .container .header {
-  height: 660px;
-  background-image: url("../img/bg-main.png");
-  background-position: top center;
+	height: 660px;
+	background-image: url("../img/bg-main.png");
+	background-position: top center;
 }
+
 .container .content {
-  height: auto;
-  background-color: var(--color-content);
+	height: auto;
+	background-color: var(--color-content);
 }
 
 .nav {
-  display: flex;
-  padding-top: 50px;
+	display: flex;
+	padding-top: 50px;
 }
+
 .nav .nav__link {
-  list-style-type: none;
-  padding-right: 5px;
-  padding-left: 5px;
+	list-style-type: none;
+	padding-right: 5px;
+	padding-left: 5px;
 }
+
 .nav .nav__link a {
-  width: 100%;
-  height: 100%;
-  font-size: 1rem;
-  color: var(--color-content);
-  text-transform: uppercase;
-  text-decoration: none;
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+	color: var(--color-content);
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .content__top {
-  padding-bottom: 50px;
-}
-.content__top .content-top__header {
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 2.5;
-  padding-top: 30px;
-  font-size: 2rem;
-}
-.content__top .content-top__description {
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 2;
-  font-weight: 600;
-  max-width: 80%;
-  margin: 0 auto;
-}
-.content__top .content-top__img {
-  width: 100%;
-  height: auto;
-}
-.content__top .content-top__img-desc {
-  text-align: center;
+	padding-bottom: 30px;
 }
 
-.content-middle {
-  padding-bottom: 50px;
-}/*# sourceMappingURL=style.css.map */
+.content__top .content-top__header {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 2.5;
+	padding-top: 30px;
+	font-size: 1.5rem;
+	font-family: "Old Standard TT", serif;
+}
+
+.content__top .content-top__description {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 2;
+	font-weight: 600;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.content__top .content-top__img {
+	width: 100%;
+	height: auto;
+}
+
+.content__top .content-top__img-desc {
+	text-align: center;
+}
+
+.content__howit {
+	padding-bottom: 30px;
+}
+
+.content__howit .content-howit__header {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding-left: 170px;
+	font-family: "Old Standard TT", serif;
+}
+
+.content__howit .content-howit__list {
+	padding: 0 170px;
+}
+
+.content__howit .content-howit__list li {
+	list-style-type: none;
+	padding: 10px 0;
+	font-size: 1.1rem;
+}
+
+.content__howit .content-howit__desc {
+	max-width: 50%;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	margin-bottom: 30px;
+}
+
+.content__howit .sign-up {
+	padding: 0 170px;
+}
+
+.content__howit .sign-up .sign-up__row-header {
+	display: grid;
+	text-align: center;
+	border: solid 1px #bebebe;
+	font-family: "Old Standard TT", serif;
+	padding: 30px 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.content__howit .sign-up .sign-up__row {
+	display: flex;
+	border-bottom: solid 1px #bebebe;
+}
+
+.sign-up__col {
+	display: grid;
+	width: 100%;
+	flex-direction: column;
+	border-left: solid 1px #bebebe;
+	text-align: center;
+}
+
+.sign-up__col img {
+	padding-top: 15px;
+	margin: 0 auto;
+}
+
+.sign-up__col .sign-up__desc {
+	padding: 15px 15px;
+}
+
+.sign-up__col--head {
+	background-color: #D7F1D8;
+	font-weight: 600;
+}
+
+.sign-up__col:last-child {
+	border-right: solid 1px #bebebe;
+}
+
+.sign-up__desc--btn {
+	display: block;
+	background-color: var(--color-accent);
+	margin: 30px 20px;
+	color: var(--color-content);
+	text-transform: uppercase;
+	border-radius: 3px;
+	border: solid 1px var(--color-accent);
+	font-weight: 600;
+	transition: 0.5s ease;
+}
+
+.sign-up__desc--btn:hover {
+	background-color: #D7F1D8;
+	color: var(--color-bg);
+	transition: 0.5s ease;
+	font-weight: 600;
+	border: solid 1px #bebebe;
+	cursor: pointer;
+}
+
+.banner {
+	padding: 20px 0;
+}
+
+.banner .banner__img {
+	max-width: 1080px;
+}
+
+/*# sourceMappingURL=style.css.map */

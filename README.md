@@ -8,5 +8,7 @@
 - javascript;
 - Fancybox;
 - flexbox;
+- grids;
 - HTML5;
-- CSS3.
+- CSS3;
+- google-fonts;

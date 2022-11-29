@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/a-gran/glamurnenko#readme",
   "dependencies": {
-    "@fancyapps/ui": "^4.0.31",
+    "@fancyapps/fancybox": "^3.5.7",
+    "bootstrap": "4.6",
     "jquery": "^3.3.1"
   }
 }

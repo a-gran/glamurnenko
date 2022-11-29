@@ -6,9 +6,10 @@
 - sass;
 - BEM;
 - javascript;
-- Fancybox;
+- Fancybox 3.5;
 - flexbox;
 - grids;
 - HTML5;
 - CSS3;
 - google-fonts;
+- bootstrap 4.6.

@@ -9,16 +9,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
 	<title>Glamurnenko</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/style.css.map">
 </head>
 
 <body>
 	<div class="container">
 		<header class="header">
 			<div class="header__menu">
-				<nav class="nav">
-					<li class="nav__link nav__link--active"><a href="#">Блог</a></li>
+				<nav class="nav d-flex">
+					<li class="nav__link nav__link--active">
+						<a href="#">Блог</a>
+					</li>
 					<li class="nav__link"><a href="#">Бесплатно</a></li>
 					<li class="nav__link"><a href="#">Семинары</a></li>
 					<li class="nav__link"><a href="#">Тренинги</a></li>
@@ -71,95 +74,33 @@
 				</p>
 
 				<div class="sign-up">
-					<div class="sign-up__row-header">Записывайтесь прямо сейчас</div>
-					<div class="sign-up__row">
-						<div class="sign-up__col sign-up__col--head">
-							<span class="sign-up__desc">Пакет<br>
-								Попробовать
-							</span>
+					<div class="row sign-up__row-header">Записывайтесь прямо сейчас</div>
+					<div class="row sign-up__row">
+						<div class="col col-md-4 col-12 d-flex sign-up__col sign-up__col--head">
+							<span class="sign-up__desc">Пакет<br>Попробовать</span>
+							<span class="sign-up__desc"><img src="img/galka.svg" alt="galka"></span>
+							<span class="sign-up__desc">5 Ваших луков или 5 вопросов в пределах 24 часов</span>
+							<span class="sign-up__desc">5 вопросов/комплектов на оценку</span>
+							<span class="sign-up__desc">499 рублей</span>
+							<span class="sign-up__desc sign-up__desc--btn">Заказать</span>
 						</div>
-						<div class="sign-up__col sign-up__col--head">
-							<span class="sign-up__desc">Пакет<br>
-								1 день</span>
-						</div>
-						<div class="sign-up__col sign-up__col--head">
-							<span class="sign-up__desc">Пакет<br>
-								1 месяц</span>
-						</div>
-					</div>
 
-					<div class="sign-up__row">
-						<div class="sign-up__col">
-							<img src="img/galka.svg" alt="galka">
-							<span class="sign-up__desc">
-								5 Ваших луков или 5 вопросов в пределах 24 часов
-							</span>
+						<div class="col col-md-4 col-12 d-flex sign-up__col sign-up__col--head">
+							<span class="sign-up__desc">Пакет<br>1 день</span>
+							<span class="sign-up__desc"><img src="img/galka.svg" alt="galka"></span>
+							<span class="sign-up__desc">Советы стилиста в пределах 24 часов</span>
+							<span class="sign-up__desc">до 100 вопросов/комплектов на оценку</span>
+							<span class="sign-up__desc">2900 рублей</span>
+							<span class="sign-up__desc sign-up__desc--btn">Заказать</span>
 						</div>
-						<div class="sign-up__col">
-							<img src="img/galka.svg" alt="galka">
-							<span class="sign-up__desc">
-								Советы стилиста в пределах 24 часов
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<img src="img/galka.svg" alt="galka">
-							<span class="sign-up__desc">
-								Советы стилиста в течение месяца
-							</span>
-						</div>
-					</div>
 
-					<div class="sign-up__row">
-						<div class="sign-up__col">
-							<span class="sign-up__desc">
-								5 вопросов/комплектов на оценку
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<span class="sign-up__desc">
-								до 100 вопросов/комплектов на оценку
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<span class="sign-up__desc">
-								неограничено вопросов/комплектов на оценку
-							</span>
-						</div>
-					</div>
-
-					<div class="sign-up__row">
-						<div class="sign-up__col">
-							<span class="sign-up__desc">
-								499 рублей
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<span class="sign-up__desc">
-								2900 рублей
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<span class="sign-up__desc">
-								9900 рублей
-							</span>
-						</div>
-					</div>
-
-					<div class="sign-up__row">
-						<div class="sign-up__col">
-							<span class="sign-up__desc sign-up__desc--btn">
-								Заказать
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<span class="sign-up__desc sign-up__desc--btn">
-								Заказать
-							</span>
-						</div>
-						<div class="sign-up__col">
-							<span class="sign-up__desc sign-up__desc--btn">
-								Заказать
-							</span>
+						<div class="col col-md-4 col-12 d-flex sign-up__col sign-up__col--head">
+							<span class="sign-up__desc">Пакет<br>1 месяц</span>
+							<span class="sign-up__desc"><img src="img/galka.svg" alt="galka"></span>
+							<span class="sign-up__desc">Советы стилиста в течение месяца</span>
+							<span class="sign-up__desc">неограничено вопросов/комплектов на оценку</span>
+							<span class="sign-up__desc">9900 рублей</span>
+							<span class="sign-up__desc sign-up__desc--btn">Заказать</span>
 						</div>
 					</div>
 				</div>
@@ -174,7 +115,9 @@
 
 	</footer>
 
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

@@ -130,69 +130,27 @@ body {
 		font-size: 1.1rem;
 		margin-bottom: 30px;
 	}
-
-	.sign-up {
-		padding: 0 170px;
-
-		.sign-up__row-header {
-			display: grid;
-			text-align: center;
-			border: solid 1px #bebebe;
-			font-family: 'Oranienbaum', serif;
-			padding: 30px 0;
-			font-size: 1.25rem;
-			font-weight: 600;
-		}
-
-		.sign-up__row {
-			border-bottom: solid 1px #bebebe;
-		}
-	}
 }
 
-.sign-up__col {
-	flex-direction: column;
-	border-left: solid 1px #bebebe;
-	text-align: center;
-	justify-content: space-between;
-
-	img {
-		padding-top: 15px;
-		margin: 0 auto;
-	}
-
-	.sign-up__desc {
-		padding: 15px 15px;
-	}
-}
-
-.sign-up__col--head {
-	background-color: #D7F1D8;
-	font-weight: 600;
-}
-
-.sign-up__col:last-child {
-	border-right: solid 1px #bebebe;
-}
-
-.sign-up__desc--btn {
+.sign-up--btn {
 	display: block;
-	background-color: var(--color-accent);
+	background-color: var(--color-font);
 	margin: 30px 20px;
 	color: var(--color-content);
 	text-transform: uppercase;
 	border-radius: 3px;
-	border: solid 1px var(--color-accent);
+	border: solid 2px var(--color-font);
 	font-weight: 600;
 	transition: 0.5s ease;
+	padding: 5px;
 }
 
-.sign-up__desc--btn:hover {
+.sign-up--btn:hover {
 	background-color: #D7F1D8;
 	color: var(--color-bg);
 	transition: 0.5s ease;
 	font-weight: 600;
-	border: solid 1px #bebebe;
+	border: solid 2px var(--color-font);
 	cursor: pointer;
 }
 
@@ -200,6 +158,79 @@ body {
 	padding: 20px 0;
 
 	.banner__img {
-		max-width: 1080px;
+		max-width: 100%;
 	}
+}
+
+// table
+
+.table-responsive {
+	overflow-x: auto;
+}
+
+.table {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	border: solid 2px #FDC200;
+	max-width: 900px;
+	margin: 0 auto;
+
+	th,
+	td {
+		text-align: center;
+		padding: 10px;
+		border-right: solid 2px #FDC200;
+		font-weight: 700;
+	}
+
+	td {
+		background-color: #FFF000;
+		border: solid 2px #FDC200;
+	}
+
+	.thead,
+	.td-price td {
+		background-color: #FFD100;
+	}
+
+	.column-1 {
+		text-align: left;
+		width: 40%;
+	}
+
+	.column-2 {
+		width: 20%;
+	}
+}
+
+.table thead th {
+	border: solid 2px #FDC200;
+}
+
+.td__currency {
+	height: 100px;
+	position: relative;
+
+	.td-currency__block {
+		position: relative;
+		top: 18px;
+
+		.fa-solid {
+			border: solid 2px #000000;
+			padding: 10px;
+		}
+	}
+}
+
+.td__price {
+	fa-solid {
+		font-size: 1rem;
+	}
+}
+
+.td__price {
+	font-size: 1.2rem;
+}
+
+.td__price--normal-size {
+	font-size: 1rem;
 }

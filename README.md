@@ -8,8 +8,8 @@
 - javascript;
 - Fancybox 3.5;
 - flexbox;
-- grids;
 - HTML5;
 - CSS3;
 - google-fonts;
+- table;
 - bootstrap 4.6.

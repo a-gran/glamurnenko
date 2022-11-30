@@ -11,12 +11,13 @@
 	<title>Glamurnenko</title>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css">
-	<link rel="stylesheet" href="styles/all.css">
+	<link rel="stylesheet" href="fontawesome-free-6.2.1-web/all.css">
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 	<div class="container">
+		<!-- header -->
 		<header class="header">
 			<div class="header__menu">
 				<nav class="nav d-flex">
@@ -47,7 +48,9 @@
 			</div>
 		</header>
 
+		<!-- контент -->
 		<section class="content">
+			<!-- блок-1, скорая стильная помощь -->
 			<div class="content__top">
 				<h1 class="content-top__header">Скорая стильная помощь</h1>
 				<p class="content-top__description">
@@ -58,6 +61,7 @@
 				<div class="content-top__img-desc">Описание картинки</div>
 			</div>
 
+			<!-- блок-2 "Как все происходит" -->
 			<div class="content__howit">
 				<h2 class="content-howit__header">Как все происходит</h2>
 				<ul class="content-howit__list">
@@ -73,179 +77,180 @@
 					Если Вы отправляетесь, к примеру, на шопинг в выходной день и Вам нужно, чтобы стилист был с Вами на
 					связи, такой вариант возможен по предварительной договоренности со стилистом.
 				</p>
+			</div>
 
-				<div class="table-responsive">
-					<table class="table">
-						<thead class="thead">
-							<th class="column-1">Вы получаете:</th>
-							<th class="column-2">Теория</th>
-							<th class="column-2">Практика</th>
-							<th class="column-2">VIP</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="column-1">Все материалы тренинга</td>
-								<td><i class="fa-solid fa-check"></i></td>
-								<td><i class="fa-solid fa-check"></i></td>
-								<td><i class="fa-solid fa-check"></i></td>
-							</tr>
-							<tr>
-								<td class="column-1">Проверка ДЗ</td>
-								<td><i class="fa-solid fa-minus"></i></td>
-								<td>2,5 месяца имиджмейкером команды Гламурненько.ру</td>
-								<td>2,5 месяца лично Екатериной Маляровой</td>
-							</tr>
-							<tr>
-								<td class="column-1">Тренажер по стилевым типажам</td>
-								<td><i class="fa-solid fa-minus"></i></td>
-								<td><i class="fa-solid fa-check"></i></td>
-								<td><i class="fa-solid fa-check"></i></td>
-							</tr>
-							<tr>
-								<td class="column-1">Тренажер по вещам и образам</td>
-								<td><i class="fa-solid fa-minus"></i></td>
-								<td><i class="fa-solid fa-check"></i></td>
-								<td><i class="fa-solid fa-check"></i></td>
-							</tr>
-							<tr class="td-price">
-								<td class="column-1"><span class="td__price td__price--normal-size">Цена</span></td>
-								<td><span class="td__price">7990</span>&nbsp;&nbsp;<i
-										class="fa-solid fa-ruble-sign"></i></td>
-								<td><span class="td__price">9990</span>&nbsp;&nbsp;<i
-										class="fa-solid fa-ruble-sign"></i></td>
-								<td><span class="td__price">24990</span>&nbsp;&nbsp;<i
-										class="fa-solid fa-ruble-sign"></i></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td class="td__currency" colspan="3">
-									<div class="td-currency__block">
-										<i class="fa-solid fa-ruble-sign"></i>
-										<i class="fa-solid fa-hryvnia-sign"></i>
-										<i class="fa-solid fa-dollar-sign"></i>
-										<i class="fa-solid fa-euro-sign"></i>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><span class="btn__sign-up">Заказать</span></td>
-								<td><span class="btn__sign-up">Заказать</span></td>
-								<td><span class="btn__sign-up">Заказать</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-				<div class="banner">
-					<img class="banner__img" src="img/2razmera_books_preview_1200_c.png" alt="banner">
-				</div>
-
-				<div class="content__service">
-					<h2 class="service__title">Пакеты услуг</h2>
-					<div class="row service__row">
-						<div class="col col-12 col-md-4 service__item">
-							<div class="service-item__wrap d-flex">
-								<span class="service-item__package">Пакет</span>
-								<div class="service-item__title">&laquo;Попробовать&raquo;</div>
-								<div class="service-item__desc d-flex">
-									<span>Срок</span>
-									<span>в пределах 24 часов</span>
-									<span>Вопросов/комплектов на оценку</span>
-									<span>5 Ваших луков или 5 вопросов</span>
-								</div>
-								<div class="service-item__cross-price">
-									<svg class="cross-price__line" height="10" width="70">
-										<line x1="0" y1="10" x2="70" y2="0"
-											style="stroke:rgb(255,0,0);stroke-width:2" />
-									</svg>
-									<span>890</span>
+			<!-- блок-3 таблица -->
+			<div class="content__table-responsive">
+				<table class="table">
+					<thead class="thead">
+						<th class="column-1">Вы получаете:</th>
+						<th class="column-2">Теория</th>
+						<th class="column-2">Практика</th>
+						<th class="column-2">VIP</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="column-1">Все материалы тренинга</td>
+							<td><i class="fa-solid fa-check"></i></td>
+							<td><i class="fa-solid fa-check"></i></td>
+							<td><i class="fa-solid fa-check"></i></td>
+						</tr>
+						<tr>
+							<td class="column-1">Проверка ДЗ</td>
+							<td><i class="fa-solid fa-minus"></i></td>
+							<td>2,5 месяца имиджмейкером команды Гламурненько.ру</td>
+							<td>2,5 месяца лично Екатериной Маляровой</td>
+						</tr>
+						<tr>
+							<td class="column-1">Тренажер по стилевым типажам</td>
+							<td><i class="fa-solid fa-minus"></i></td>
+							<td><i class="fa-solid fa-check"></i></td>
+							<td><i class="fa-solid fa-check"></i></td>
+						</tr>
+						<tr>
+							<td class="column-1">Тренажер по вещам и образам</td>
+							<td><i class="fa-solid fa-minus"></i></td>
+							<td><i class="fa-solid fa-check"></i></td>
+							<td><i class="fa-solid fa-check"></i></td>
+						</tr>
+						<tr class="td-price">
+							<td class="column-1"><span class="td__price td__price--normal-size">Цена</span></td>
+							<td><span class="td__price">7990</span>&nbsp;&nbsp;<i class="fa-solid fa-ruble-sign"></i>
+							</td>
+							<td><span class="td__price">9990</span>&nbsp;&nbsp;<i class="fa-solid fa-ruble-sign"></i>
+							</td>
+							<td><span class="td__price">24990</span>&nbsp;&nbsp;<i class="fa-solid fa-ruble-sign"></i>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="td__currency" colspan="3">
+								<div class="td-currency__block">
 									<i class="fa-solid fa-ruble-sign"></i>
+									<i class="fa-solid fa-hryvnia-sign"></i>
+									<i class="fa-solid fa-dollar-sign"></i>
+									<i class="fa-solid fa-euro-sign"></i>
 								</div>
-								<div class="service-item__price">
-									<span>499</span>
-									<i class="fa-solid fa-ruble-sign"></i>
-								</div>
-								<span class="btn__sign-up--service-item">Заказать</span>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><span class="btn__sign-up">Заказать</span></td>
+							<td><span class="btn__sign-up">Заказать</span></td>
+							<td><span class="btn__sign-up">Заказать</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- блок-4 баннер -->
+			<div class="banner">
+				<img class="banner__img" src="img/2razmera_books_preview_1200_c.png" alt="banner">
+			</div>
+
+			<!-- блок-5 пакеты услуг -->
+			<div class="content__service">
+				<h2 class="service__title">Пакеты услуг</h2>
+				<div class="row service__row">
+					<div class="col col-12 col-md-4 service__item">
+						<div class="service-item__wrap d-flex">
+							<span class="service-item__package">Пакет</span>
+							<div class="service-item__title">&laquo;Попробовать&raquo;</div>
+							<div class="service-item__desc d-flex">
+								<span>Срок</span>
+								<span>в пределах 24 часов</span>
+								<span>Вопросов/комплектов на оценку</span>
+								<span>5 Ваших луков или 5 вопросов</span>
 							</div>
+							<div class="service-item__cross-price">
+								<svg class="cross-price__line" height="10" width="70">
+									<line x1="0" y1="10" x2="70" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+								</svg>
+								<span>890</span>
+								<i class="fa-solid fa-ruble-sign"></i>
+							</div>
+							<div class="service-item__price">
+								<span>499</span>
+								<i class="fa-solid fa-ruble-sign"></i>
+							</div>
+							<span class="btn__sign-up--service-item">Заказать</span>
 						</div>
+					</div>
 
-						<div class="col col-12 col-md-4 service__item">
-							<div class="service-item__wrap d-flex">
-								<span class="service-item__package">Пакет</span>
-								<div class="service-item__title">&laquo;1 день&raquo;</div>
-								<div class="service-item__desc d-flex">
-									<span>Срок</span>
-									<span>в пределах 24 часов</span>
-									<span>Вопросов/комплектов на оценку</span>
-									<span>до 100</span>
-								</div>
-								<div class="service-item__cross-price">
-									<svg class="cross-price__line" height="10" width="70">
-										<line x1="0" y1="10" x2="70" y2="0"
-											style="stroke:rgb(255,0,0);stroke-width:2" />
-									</svg>
-									<span>3900</span>
-									<i class="fa-solid fa-ruble-sign"></i>
-								</div>
-								<div class="service-item__price">
-									<span>2900</span>
-									<i class="fa-solid fa-ruble-sign"></i>
-								</div>
-								<span class="btn__sign-up--service-item">Заказать</span>
+					<div class="col col-12 col-md-4 service__item">
+						<div class="service-item__wrap d-flex">
+							<span class="service-item__package">Пакет</span>
+							<div class="service-item__title">&laquo;1 день&raquo;</div>
+							<div class="service-item__desc d-flex">
+								<span>Срок</span>
+								<span>в пределах 24 часов</span>
+								<span>Вопросов/комплектов на оценку</span>
+								<span>до 100</span>
 							</div>
+							<div class="service-item__cross-price">
+								<svg class="cross-price__line" height="10" width="70">
+									<line x1="0" y1="10" x2="70" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+								</svg>
+								<span>3900</span>
+								<i class="fa-solid fa-ruble-sign"></i>
+							</div>
+							<div class="service-item__price">
+								<span>2900</span>
+								<i class="fa-solid fa-ruble-sign"></i>
+							</div>
+							<span class="btn__sign-up--service-item">Заказать</span>
 						</div>
+					</div>
 
-						<div class="col col-12 col-md-4 service__item">
-							<div class="service-item__wrap d-flex">
-								<span class="service-item__package">Пакет</span>
-								<div class="service-item__title">&laquo;1 месяц&raquo;</div>
-								<div class="service-item__desc d-flex">
-									<span>Срок</span>
-									<span>в течение месяца</span>
-									<span>Вопросов/комплектов на оценку</span>
-									<span>неограниченно</span>
-								</div>
-								<div class="service-item__cross-price">
-									<svg class="cross-price__line" height="10" width="70">
-										<line x1="0" y1="10" x2="70" y2="0"
-											style="stroke:rgb(255,0,0);stroke-width:2" />
-									</svg>
-									<span>11900</span>
-									<i class="fa-solid fa-ruble-sign"></i>
-								</div>
-								<div class="service-item__price">
-									<span>9900</span>
-									<i class="fa-solid fa-ruble-sign"></i>
-								</div>
-								<span class="btn__sign-up--service-item">Заказать</span>
+					<div class="col col-12 col-md-4 service__item">
+						<div class="service-item__wrap d-flex">
+							<span class="service-item__package">Пакет</span>
+							<div class="service-item__title">&laquo;1 месяц&raquo;</div>
+							<div class="service-item__desc d-flex">
+								<span>Срок</span>
+								<span>в течение месяца</span>
+								<span>Вопросов/комплектов на оценку</span>
+								<span>неограниченно</span>
 							</div>
+							<div class="service-item__cross-price">
+								<svg class="cross-price__line" height="10" width="70">
+									<line x1="0" y1="10" x2="70" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+								</svg>
+								<span>11900</span>
+								<i class="fa-solid fa-ruble-sign"></i>
+							</div>
+							<div class="service-item__price">
+								<span>9900</span>
+								<i class="fa-solid fa-ruble-sign"></i>
+							</div>
+							<span class="btn__sign-up--service-item">Заказать</span>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="content__how-goes">
-					<h2 class="how-goes__title">
-						<div class="how-goes__posts">
-							<div class="how-goes__post">
-								<img src="" alt="foto">
-								<p></p>
-							</div>
-							<div class="how-goes__post">
-								<img src="" alt="foto">
-								<p></p>
-							</div>
-							<div class="how-goes__post">
-								<img src="" alt="foto">
-								<p></p>
-							</div>
-							<div class="how-goes__post">
-								<img src="" alt="foto">
-								<p></p>
-							</div>
+			<!-- блок-6 как все происходит в постах на примерах -->
+			<div class="content__help-chat">
+				<h2 class="help-chat__title">
+					<div class="help-chat__posts">
+						<div class="help-chat__post">
+							<img src="" alt="foto">
+							<p></p>
 						</div>
-					</h2>
-				</div>
+						<div class="help-chat__post">
+							<img src="" alt="foto">
+							<p></p>
+						</div>
+						<div class="help-chat__post">
+							<img src="" alt="foto">
+							<p></p>
+						</div>
+						<div class="help-chat__post">
+							<img src="" alt="foto">
+							<p></p>
+						</div>
+					</div>
+				</h2>
 			</div>
 		</section>
 	</div>

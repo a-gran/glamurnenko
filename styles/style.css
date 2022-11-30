@@ -147,7 +147,7 @@ body {
   max-width: 100%;
 }
 
-.table-responsive {
+.content__table-responsive {
   overflow-x: auto;
 }
 

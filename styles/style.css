@@ -118,7 +118,7 @@ body {
   margin-bottom: 30px;
 }
 
-.sign-up--btn {
+.btn__sign-up {
   display: block;
   background-color: var(--color-font);
   margin: 30px 20px;
@@ -131,7 +131,7 @@ body {
   padding: 5px;
 }
 
-.sign-up--btn:hover {
+.btn__sign-up:hover {
   background-color: #D7F1D8;
   color: var(--color-bg);
   transition: 0.5s ease;
@@ -207,4 +207,83 @@ body {
 
 .td__price--normal-size {
   font-size: 1rem;
+}
+
+.service__title {
+  font-family: "Oranienbaum";
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.content__service {
+  padding: 0 5%;
+}
+
+.service-item__wrap {
+  border: solid 2px #E7E7E7;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  height: 100%;
+}
+.service-item__wrap .service-item__package {
+  font-weight: 700;
+}
+.service-item__wrap .service-item__title {
+  font-weight: 900;
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+}
+.service-item__wrap .service-item__desc {
+  flex-direction: column;
+}
+.service-item__wrap .service-item__desc span:not(:first-child) {
+  padding-bottom: 10px;
+}
+.service-item__wrap .service-item__desc span:nth-child(2n) {
+  font-weight: 700;
+}
+.service-item__wrap .service-item__cross-price {
+  position: relative;
+}
+.service-item__wrap .service-item__cross-price .cross-price__line {
+  position: absolute;
+  left: -5px;
+  top: 12px;
+}
+
+.service-item__price span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.service-item__cross-price span {
+  font-size: 1.1rem;
+}
+
+.btn__sign-up--service-item {
+  background-color: var(--color-accent);
+  border: solid 2px var(--color-accent);
+  text-align: center;
+  color: var(--color-content);
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.75rem;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  transition: 0.5s ease;
+}
+
+.btn__sign-up--service-item:hover {
+  background-color: #D7F1D8;
+  color: var(--color-bg);
+  transition: 0.5s ease;
+  border: solid 2px var(--color-font);
+  cursor: pointer;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

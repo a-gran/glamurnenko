@@ -399,7 +399,6 @@ body {
 
 .nav__footer a {
 	color: inherit;
-	cursor: pointer;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

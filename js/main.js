@@ -4,9 +4,9 @@ $(function () {
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1) {
-			header.addClass('header_fixed');
+			header.addClass('header__menu--fixed');
 		} else {
-			header.removeClass('header_fixed');
+			header.removeClass('header__menu--fixed');
 		}
 	});
 });

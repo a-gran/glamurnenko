@@ -13,16 +13,44 @@
 	<link rel="stylesheet" href="styles/jquery.fancybox.css">
 	<link rel="stylesheet" href="styles/bootstrap.css">
 	<link rel="stylesheet" href="styles/fontawesome-6.2.1.css">
+	<link rel="stylesheet" href="styles/burger.css">
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 	<div class="container">
+		<!-- бургер -->
+		<nav class="navbar-main">
+			<div class="container-navbar">
+				<div class="navbar__wrap-container">
+					<div class="hamb">
+						<div class="hamb__field" id="hamb">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+
+					<ul class="menu" id="menu">
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Бесплатно</a></li>
+						<li><a href="#">Семинары</a></li>
+						<li><a href="#">Тренинги</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="popup" id="popup"></div>
+
 		<!-- header -->
 		<header class="header" id="back-top">
 			<div class="row header__menu">
-				<nav class="col-8 header-nav d-flex">
-					<a class="nav__link nav__link--active" href="#">Блог</a>
+				<nav class="col-8 col-md-7 header-nav d-flex">
+					<a class="nav__link" href="#">Блог</a>
 					<a class="nav__link" href="#">Бесплатно</a>
 					<a class="nav__link" href="#">Семинары</a>
 					<a class="nav__link" href="#">Тренинги</a>
@@ -31,7 +59,7 @@
 					<a class="nav__link" href="#">Контакты</a>
 				</nav>
 
-				<div class="col-4 social__col">
+				<div class="col-4 col-md-5 social__col">
 					<div class="row social__row">
 						<ul class="col-6 d-flex social__wrap">
 							<li class="social__link inst">
@@ -68,6 +96,7 @@
 		<section class="content">
 			<!-- блок-1, скорая стильная помощь -->
 			<div class="content__top">
+				<div class="content__top-rotated">Новинка</div>
 				<h1 class="content-top__header">Скорая стильная помощь</h1>
 				<p class="content-top__description">
 					Онлайн консультация стилиста в Вашем мобильном телефоне, когда Вам
@@ -324,7 +353,6 @@
 	</footer>
 
 	<script src="js/jquery.js"></script>
-	<script src="js/popper.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/main.js"></script>
 </body>

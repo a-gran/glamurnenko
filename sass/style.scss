@@ -72,6 +72,10 @@ body {
 	font-family: "Oranienbaum", serif;
 	align-items: center;
 
+	@media (max-width: 991px) {
+		display: none;
+	}
+
 	.nav__link {
 		list-style-type: none;
 		color: var(--color-content);
@@ -94,10 +98,26 @@ body {
 	}
 }
 
+.nav__link:focus {
+	color: var(--color-accent);
+}
+
 .header__menu--fixed {
 	position: fixed;
 	width: 1080px;
+	padding: 10px 0;
+	background-color: var(--color-font);
+
+	@media (min-width: 992px) and (max-width: 1099px) {
+		width: 100%;
+		padding: 10px 20px;
+	}
 }
+
+
+
+
+
 
 .social__wrap {
 	justify-content: flex-end;
@@ -146,13 +166,15 @@ body {
 
 .content__top {
 	padding-bottom: 30px;
+	position: relative;
+	overflow: hidden;
 
 	.content-top__header {
 		text-align: center;
 		text-transform: uppercase;
 		line-height: 2.5;
 		padding-top: 30px;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-family: 'Oranienbaum', serif;
 	}
 
@@ -175,11 +197,27 @@ body {
 	}
 }
 
+// линия со скосами
+.content__top-rotated {
+	background-color: var(--color-accent);
+	transform: rotate(-45deg);
+	color: var(--color-content);
+	text-align: center;
+	display: inline-block;
+	width: 240px;
+	position: absolute;
+	top: 56px;
+	left: -48px;
+	font-size: 0.8rem;
+	font-weight: normal;
+	padding: 5px;
+}
+
 .content__howit {
 	padding-bottom: 30px;
 
 	.content-howit__header {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		text-transform: uppercase;
 		padding-left: 170px;
 		font-family: 'Oranienbaum', serif;
@@ -311,7 +349,7 @@ body {
 .service__title {
 	font-family: 'Oranienbaum';
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	text-transform: uppercase;
 }
 
@@ -416,9 +454,9 @@ body {
 // help-chat
 
 .help-chat__title {
-	font-family: 'Oranienbaum', serif;
 	font-size: 2.5rem;
 	margin-bottom: 50px;
+	font-family: 'Oranienbaum', serif;
 }
 
 .content__help-chat {

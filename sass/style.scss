@@ -33,8 +33,6 @@ body {
 		background-image: url("../img/bg-main.png");
 		background-position: top center;
 
-
-
 		.header__logo {
 			margin-bottom: 50px;
 			margin-top: 150px;
@@ -69,18 +67,18 @@ body {
 }
 
 .header__menu {
-	padding-top: 50px;
+	//position: fixed;
+	padding-top: 40px;
+	margin: 0 auto;
 	font-family: "Oranienbaum", serif;
-
-	.header-nav {
-		justify-content: space-around;
-	}
+	align-items: center;
 
 	.nav__link {
 		list-style-type: none;
 		color: var(--color-content);
 		text-transform: uppercase;
 		font-size: 0.9rem;
+		padding-right: 15px;
 
 		a {
 			width: 100%;
@@ -99,8 +97,8 @@ body {
 
 .social__wrap {
 	justify-content: flex-end;
-	position: relative;
-	top: 2px;
+	margin-bottom: 0;
+	align-items: center;
 
 	.social__link {
 		width: 1.3rem;
@@ -118,11 +116,12 @@ body {
 .header__phones {
 	color: var(--color-content);
 	font-size: 0.75rem;
-	bottom: 8px;
+	text-align: right;
+	flex-direction: column;
 
 	span:first-child {
 		position: relative;
-		left: 7px;
+
 	}
 }
 

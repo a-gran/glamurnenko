@@ -19,27 +19,37 @@
 <body>
 	<div class="container">
 		<!-- header -->
-		<header class="header">
-			<div class="header__menu">
-				<nav class="nav d-flex">
-					<li class="nav__link nav__link--active">
-						<a href="#">Блог</a>
-					</li>
-					<li class="nav__link"><a href="#">Бесплатно</a></li>
-					<li class="nav__link"><a href="#">Семинары</a></li>
-					<li class="nav__link"><a href="#">Тренинги</a></li>
-					<li class="nav__link"><a href="#">Услуги</a></li>
-					<li class="nav__link"><a href="#">Отзывы</a></li>
-					<li class="nav__link"><a href="#">Контакты</a></li>
+		<header class="header" id="back-top">
+			<div class="row header__menu">
+				<nav class="col-7 header-nav d-flex">
+					<a class="nav__link nav__link--active" href="#">Блог</a>
+					<a class="nav__link" href="#">Бесплатно</a>
+					<a class="nav__link" href="#">Семинары</a>
+					<a class="nav__link" href="#">Тренинги</a>
+					<a class="nav__link" href="#">Услуги</a>
+					<a class="nav__link" href="#">Отзывы</a>
+					<a class="nav__link" href="#">Контакты</a>
 				</nav>
-				<div class="socials">
-					<li><a href="instagram.com"></a></li>
-					<li><a href="facebook.com"></a></li>
-					<li><a href="vk.ru"></a></li>
-				</div>
-				<div class="phones">
-					<span>8(800)707-05-13</span>
-					<span>+7(499)350-23-35</span>
+
+				<div class="col-5 social__col">
+					<div class="row social__row">
+						<ul class="col-8 d-flex social__wrap">
+							<li class="social__link inst">
+								<a href="https://www.instagram.com/"></a>
+							</li>
+							<li class="social__link fb">
+								<a href="https://facebook.com/"></a>
+							</li>
+							<li class="social__link vk">
+								<a href="https://vk.com/"></a>
+							</li>
+						</ul>
+
+						<div class="col-4 phones">
+							<span>8(800)707-05-13</span>
+							<span>+7(499)350-23-35</span>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="logo">
@@ -153,7 +163,7 @@
 			<div class="content__service">
 				<h2 class="service__title">Пакеты услуг</h2>
 				<div class="row service__row">
-					<div class="col col-12 col-md-4 service__item">
+					<div class="col-12 col-md-4 service__item">
 						<div class="service-item__wrap d-flex">
 							<span class="service-item__package">Пакет</span>
 							<div class="service-item__title">&laquo;Попробовать&raquo;</div>
@@ -178,7 +188,7 @@
 						</div>
 					</div>
 
-					<div class="col col-12 col-md-4 service__item">
+					<div class="col-12 col-md-4 service__item">
 						<div class="service-item__wrap d-flex">
 							<span class="service-item__package">Пакет</span>
 							<div class="service-item__title">&laquo;1 день&raquo;</div>
@@ -203,7 +213,7 @@
 						</div>
 					</div>
 
-					<div class="col col-12 col-md-4 service__item">
+					<div class="col-12 col-md-4 service__item">
 						<div class="service-item__wrap d-flex">
 							<span class="service-item__package">Пакет</span>
 							<div class="service-item__title">&laquo;1 месяц&raquo;</div>
@@ -269,8 +279,10 @@
 		</section>
 
 		<div class="btn__top">
-			<span>Наверх</span>
-			<i class="fa-sharp fa-solid fa-angle-up"></i>
+			<a class="btn__top-link" href="#back-top">
+				<span>Наверх</span>
+				<i class="fa-sharp fa-solid fa-angle-up"></i>
+			</a>
 		</div>
 
 	</div>

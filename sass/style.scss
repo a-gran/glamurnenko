@@ -32,6 +32,34 @@ body {
 		height: 660px;
 		background-image: url("../img/bg-main.png");
 		background-position: top center;
+
+
+
+		.header__logo {
+			margin-bottom: 50px;
+			margin-top: 150px;
+			padding-left: 10px;
+		}
+
+		.main__head-mission,
+		.main__head-desc {
+			font-family: "Oranienbaum", serif;
+			text-transform: uppercase;
+		}
+
+		.main__head-mission {
+			color: var(--color-content);
+			font-size: 1.1rem;
+			margin-bottom: 0;
+			padding-left: 10px;
+		}
+
+		.main__head-desc {
+			text-decoration: underline;
+			color: #AC8765;
+			font-size: 0.9rem;
+			padding-left: 10px;
+		}
 	}
 
 	.content {
@@ -63,6 +91,10 @@ body {
 			text-decoration: none;
 		}
 	}
+
+	.nav__link:first-child {
+		padding-left: 15px;
+	}
 }
 
 .social__wrap {
@@ -74,16 +106,25 @@ body {
 		width: 1.3rem;
 		height: 1.1rem;
 		list-style-type: none;
-	}
 
-	.social__link:not(:first-child) {
-		margin-left: 10px;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
 
+.header__phones {
+	color: var(--color-content);
+	font-size: 0.75rem;
+	bottom: 8px;
 
-
-
+	span:first-child {
+		position: relative;
+		left: 7px;
+	}
+}
 
 .inst {
 	background: url(../img/inst.png) no-repeat;

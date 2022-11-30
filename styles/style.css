@@ -380,7 +380,6 @@ body {
   align-items: center;
 }
 .content__help-chat .help-chat__post .help-chat__post-img {
-  width: 33%;
   max-width: 250px;
   cursor: pointer;
 }

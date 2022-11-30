@@ -10,29 +10,17 @@
   --color-accent: #ff0c3a;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto-Regular") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Oranienbaum";
-  src: local("Oranienbaum-Regular") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
 html {
   font-size: 20px;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
   border: none;
   outline: none;
   background-color: var(--color-font);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -217,7 +205,9 @@ body {
 }
 
 .content__service {
-  padding: 0 5%;
+  max-width: 1000px;
+  margin: 5px auto;
+  margin-bottom: 100px;
 }
 
 .service-item__wrap {
@@ -286,4 +276,10 @@ body {
   border: solid 2px var(--color-font);
   cursor: pointer;
   font-weight: 700;
+}
+
+.content__help-chat {
+  max-width: 700px;
+  margin: 5px auto;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */

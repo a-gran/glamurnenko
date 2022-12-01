@@ -22,17 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // прикрепление шапки к верху страницы при скролле
+// появление меню через 1 экран
 $(function () {
 	let header = $('.header__menu')
 
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 1) {
+		if ($(this).scrollTop() > window.screen.height) {
 			header.addClass('header__menu--fixed')
 		} else {
 			header.removeClass('header__menu--fixed')
 		}
 	})
 })
+
 
 
 

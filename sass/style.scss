@@ -199,6 +199,10 @@ body {
 	}
 }
 
+.mob-header__logo {
+	margin-top: 50px;
+}
+
 @media (min-width: 992px) {
 
 	/* исчезновение гамбургера мобильного меню 
@@ -224,16 +228,19 @@ body {
 		cursor: pointer;
 	}
 
-	.hamb__field.active .bar:nth-child(2) {
-		opacity: 0;
-	}
+	.hamb__field.active {
+		.bar:nth-child(2) {
+			opacity: 0;
+		}
 
-	.hamb__field.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
-	}
+		.bar:nth-child(1) {
+			transform: translateY(8px) rotate(45deg);
+		}
 
-	.hamb__field.active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
+		.bar:nth-child(3) {
+			transform: translateY(-8px) rotate(-45deg);
+		}
+
 	}
 
 	.bar {
@@ -255,39 +262,38 @@ body {
 		z-index: 99;
 		display: flex;
 		transition: 0.3s;
+
+		.menu {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			justify-content: start;
+			overflow: auto;
+			list-style-type: none;
+
+			li {
+				width: 100%;
+				margin: 5px 0;
+
+				a {
+					justify-content: center;
+					font-size: 1.1rem;
+					color: var(--color-content);
+					text-transform: uppercase;
+					font-family: "Oranienbaum", serif;
+				}
+			}
+		}
 	}
 
 	.popup.open {
 		left: 0;
 	}
 
-	.popup .menu {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		justify-content: start;
-		overflow: auto;
-		list-style-type: none;
-	}
-
-	.popup .menu>li {
-		width: 100%;
-		margin: 5px 0;
-	}
-
-	.popup .menu>li>a {
-		justify-content: center;
-		font-size: 20px;
-		font-weight: 400;
-		color: var(--color-content);
-		text-transform: uppercase;
-		font-family: "Oranienbaum", serif;
-	}
-
-	.popup .menu>li>a:hover {
+	.popup .menu li a:hover {
 		transition: all 0.3s ease-in-out;
 		color: var(--color-accent);
 		text-decoration: none;

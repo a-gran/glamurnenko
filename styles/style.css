@@ -25,10 +25,6 @@ body {
 
 .container {
 	max-width: 1100px;
-<<<<<<< HEAD
-	padding: 0 10px;
-=======
->>>>>>> dev
 	margin: 0 auto;
 }
 
@@ -61,11 +57,7 @@ body {
 	text-decoration: underline;
 	color: #AC8765;
 	font-size: 0.9rem;
-<<<<<<< HEAD
-	padding-left: 10px;
-=======
 	padding-left: 30px;
->>>>>>> dev
 }
 
 .container .content {
@@ -116,10 +108,7 @@ body {
 	width: 1080px;
 	padding: 10px 0;
 	background-color: var(--color-font);
-<<<<<<< HEAD
-=======
 	z-index: 9999;
->>>>>>> dev
 }
 
 @media (min-width: 992px) and (max-width: 1099px) {
@@ -135,13 +124,13 @@ body {
 	align-items: center;
 }
 
-.social__wrap .social__link {
+.social__link {
 	width: 1.3rem;
 	height: 1.1rem;
 	list-style-type: none;
 }
 
-.social__wrap .social__link a {
+.social__link a {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -154,47 +143,55 @@ body {
 	flex-direction: column;
 }
 
+.header__phones span a {
+	color: inherit;
+}
+
 .header__phones span:first-child {
 	position: relative;
+}
+
+.mob-menu__phones {
+	margin: 30px 0 !important;
+	flex-direction: column;
+}
+
+.mob-menu__socials {
+	max-width: 100px;
+}
+
+.mob-menu__socials .social__link {
+	width: 30px;
 }
 
 .inst {
 	background: url(../img/inst.png) no-repeat;
 	background-position: -4px -2px;
-<<<<<<< HEAD
-=======
 }
 
 .inst:hover {
 	background: url(../img/inst.png) no-repeat;
 	background-position: -4px -27px;
->>>>>>> dev
 }
 
 .fb {
 	background: url(../img/fb.png) no-repeat;
 	background-position: -4px -2px;
-<<<<<<< HEAD
-=======
 }
 
 .fb:hover {
 	background: url(../img/fb.png) no-repeat;
 	background-position: -4px -27px;
->>>>>>> dev
 }
 
 .vk {
 	background: url(../img/vk.png) no-repeat;
 	background-position: -1px -2px;
-<<<<<<< HEAD
-=======
 }
 
 .vk:hover {
 	background: url(../img/vk.png) no-repeat;
 	background-position: -1px -27px;
->>>>>>> dev
 }
 
 .content__top {
@@ -212,8 +209,6 @@ body {
 	font-family: "Oranienbaum", serif;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width: 700px) {
 	.content__top .content-top__header {
 		max-width: 300px;
@@ -222,7 +217,6 @@ body {
 	}
 }
 
->>>>>>> dev
 .content__top .content-top__description {
 	text-align: center;
 	text-transform: uppercase;
@@ -232,8 +226,6 @@ body {
 	margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width: 700px) {
 	.content__top .content-top__description {
 		max-width: 350px;
@@ -242,7 +234,6 @@ body {
 	}
 }
 
->>>>>>> dev
 .content__top .content-top__img {
 	width: 100%;
 	height: auto;
@@ -269,14 +260,6 @@ body {
 
 .content__howit {
 	padding-bottom: 30px;
-<<<<<<< HEAD
-}
-
-.content__howit .content-howit__header {
-	font-size: 2rem;
-	text-transform: uppercase;
-	padding-left: 170px;
-=======
 	padding: 0 15px;
 }
 
@@ -286,37 +269,23 @@ body {
 	margin-bottom: 40px;
 	font-size: 2rem;
 	text-transform: uppercase;
->>>>>>> dev
 	font-family: "Oranienbaum", serif;
 }
 
 .content__howit .content-howit__list {
-<<<<<<< HEAD
-	padding: 0 170px;
-=======
 	max-width: 770px;
 	margin: 0 auto;
 	padding: 0;
->>>>>>> dev
 }
 
 .content__howit .content-howit__list li {
 	list-style-type: none;
-<<<<<<< HEAD
-	padding: 10px 0;
-	font-size: 1.1rem;
-}
-
-.content__howit .content-howit__desc {
-	max-width: 50%;
-=======
 	font-size: 1.1rem;
 	margin-bottom: 30px;
 }
 
 .content__howit .content-howit__desc {
 	max-width: 600px;
->>>>>>> dev
 	margin: 0 auto;
 	font-size: 1.1rem;
 	margin-bottom: 30px;
@@ -357,24 +326,17 @@ body {
 }
 
 .table {
-<<<<<<< HEAD
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-=======
->>>>>>> dev
 	border: solid 2px #FDC200;
 	max-width: 900px;
 	margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width: 700px) {
 	.table {
 		font-size: 0.75rem;
 	}
 }
 
->>>>>>> dev
 .table th,
 .table td {
 	text-align: center;
@@ -409,7 +371,6 @@ body {
 .td__currency {
 	height: 100px;
 	position: relative;
-<<<<<<< HEAD
 }
 
 .td__currency .td-currency__block {
@@ -420,28 +381,10 @@ body {
 .td__currency .td-currency__block .fa-solid {
 	border: solid 2px #000000;
 	padding: 10px;
-}
-
-.td__price fa-solid {
-	font-size: 1rem;
-=======
-}
-
-.td__currency .td-currency__block {
-	position: relative;
-	top: 18px;
-}
-
-.td__currency .td-currency__block .fa-solid {
-	border: solid 2px #000000;
-	padding: 10px;
->>>>>>> dev
 }
 
 .td__price {
 	font-size: 1.2rem;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 700px) {
@@ -452,20 +395,16 @@ body {
 
 .td__price fa-solid {
 	font-size: 1rem;
->>>>>>> dev
 }
 
 .td__price--normal-size {
 	font-size: 1rem;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 700px) {
 	.td__price--normal-size {
 		font-size: 0.75rem;
 	}
->>>>>>> dev
 }
 
 .service__title {
@@ -582,15 +521,12 @@ body {
 	margin-bottom: 40px;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width: 576px) {
 	.content__help-chat .help-chat__post:not(:last-child) {
 		margin-bottom: 20px;
 	}
 }
 
->>>>>>> dev
 .content__help-chat .help-chat__post:last-child {
 	padding-bottom: 70px;
 }
@@ -599,15 +535,12 @@ body {
 	align-items: center;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width: 576px) {
 	.content__help-chat .help-chat__post {
 		flex-direction: column;
 	}
 }
 
->>>>>>> dev
 .content__help-chat .help-chat__post .help-chat__post-img {
 	max-width: 250px;
 	cursor: pointer;
@@ -617,8 +550,6 @@ body {
 	font-size: 1.25rem;
 	line-height: 1.1;
 	padding-left: 30px;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 576px) {
@@ -628,7 +559,6 @@ body {
 		margin: 0 auto;
 		margin-top: 20px;
 	}
->>>>>>> dev
 }
 
 .btn__top {

@@ -717,6 +717,32 @@ body {
 	color: inherit;
 }
 
+.fa-angle-up {
+	padding-left: 5px;
+	-webkit-animation: scroll 2s ease infinite;
+	animation: scroll 2s ease infinite;
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		transform: translateY(0rem);
+	}
+
+	30% {
+		transform: translateY(0.1rem);
+	}
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0rem);
+	}
+
+	30% {
+		transform: translateY(0.1rem);
+	}
+}
+
 .nav__footer {
 	color: var(--color-content);
 	flex-direction: column;

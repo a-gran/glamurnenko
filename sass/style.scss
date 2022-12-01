@@ -715,6 +715,21 @@ body {
 	}
 }
 
+.fa-angle-up {
+	padding-left: 5px;
+	animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0rem);
+	}
+
+	30% {
+		transform: translateY(0.1rem);
+	}
+}
+
 // footer
 
 .nav__footer {
